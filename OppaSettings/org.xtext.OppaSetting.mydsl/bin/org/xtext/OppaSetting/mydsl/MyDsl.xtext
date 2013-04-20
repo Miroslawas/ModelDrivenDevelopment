@@ -15,6 +15,7 @@ Section returns Section:
 	'Section\n\t\t\t{\n\t\t\t\t name= '
 	name=EString
 	
+	
 		(('\n\t\t\t\t ' features+=Feature)*  )?
 	'} \n';
 

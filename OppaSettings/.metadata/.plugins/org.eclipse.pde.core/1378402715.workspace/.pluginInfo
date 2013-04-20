@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="1063" localization="OSGI-INF/l10n/bundle" name="org.xpand.oppa" project="org.xpand.oppa"/>
+	<bundle bundleID="1060" class="feature.provider.FeatureEditPlugin$Implementation" localization="plugin" name="%pluginName" project="OppaSetting.edit" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1058" localization="OSGI-INF/l10n/bundle" name="org.xtext.OppaSetting.mydsl.tests" project="org.xtext.OppaSetting.mydsl.tests" provider="My Company"/>
+	<bundle bundleID="1059" localization="plugin" name="%pluginName" project="OppaSetting" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1056" class="org.xtext.OppaSetting.mydsl.ui.internal.MyDslActivator" localization="OSGI-INF/l10n/bundle" name="org.xtext.OppaSetting.mydsl.ui" project="org.xtext.OppaSetting.mydsl.ui" provider="My Company"/>
+	<bundle bundleID="1062" localization="plugin" name="%pluginName" project="OppaSetting.tests" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1057" localization="OSGI-INF/l10n/bundle" name="org.xtext.OppaSetting.mydsl" project="org.xtext.OppaSetting.mydsl" provider="My Company"/>
+	<bundle bundleID="1061" class="feature.presentation.FeatureEditorPlugin$Implementation" localization="plugin" name="%pluginName" project="OppaSetting.editor" provider="%providerName">
+		<library name="."/>
+	</bundle>
+</map>
