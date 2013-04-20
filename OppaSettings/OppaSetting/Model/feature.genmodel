@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/OppaSetting/src" modelPluginID="OppaSetting" modelName="Feature"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="7.0" copyrightFields="false">
+  <foreignModel>feature.ecore</foreignModel>
+  <genPackages prefix="Feature" disposableProviderFactory="true" ecorePackage="feature.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="feature.ecore#//Type">
+      <genEnumLiterals ecoreEnumLiteral="feature.ecore#//Type/SWITCH"/>
+      <genEnumLiterals ecoreEnumLiteral="feature.ecore#//Type/RANGE"/>
+      <genEnumLiterals ecoreEnumLiteral="feature.ecore#//Type/INT"/>
+      <genEnumLiterals ecoreEnumLiteral="feature.ecore#//Type/STRING"/>
+    </genEnums>
+    <genClasses ecoreClass="feature.ecore#//SettingsModel">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference feature.ecore#//SettingsModel/sections"/>
+    </genClasses>
+    <genClasses ecoreClass="feature.ecore#//Section">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//Section/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference feature.ecore#//Section/features"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference feature.ecore#//Section/subsections"/>
+    </genClasses>
+    <genClasses ecoreClass="feature.ecore#//Feature">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//Feature/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//Feature/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//Feature/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//Feature/type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference feature.ecore#//Feature/excludes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference feature.ecore#//Feature/depends"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

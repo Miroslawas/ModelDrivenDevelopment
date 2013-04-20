@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<feature:SettingsModel
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:feature="platform:/resource/OppaSetting/Model/feature.ecore"
+    xsi:schemaLocation="platform:/resource/OppaSetting/Model/feature.ecore metamodel/feature.ecore">
+  <sections
+      name="Moja sekcja">
+    <features
+        name="fhgdhfyjdy"/>
+  </sections>
+  <sections
+      name="2ga sekcja">
+    <features
+        name="sfhgf"
+        type="RANGE"/>
+  </sections>
+</feature:SettingsModel>

@@ -1,0 +1,46 @@
+«IMPORT feature»
+
+«DEFINE feature FOR Feature»
+«IF this.type==Type::SWITCH»
+<SwitchPreference
+	        android:key="«this.id»"
+	        android:summary="«this.description»"
+	        android:title="«this.name»" />	
+«ELSEIF this.type==Type::RANGE»
+<ListPreference
+	        android:key="«this.id»"
+	        android:summary="«this.description»"
+	        android:title="«this.name»" />
+«ELSEIF this.type==Type::INT»
+<ListPreference
+	        android:key="«this.id»"
+	        android:summary="«this.description»"
+	        android:title="«this.name»" />
+«ELSEIF this.type==Type::STRING»
+<EditTextPreference
+	        android:key="«this.id»"
+	        android:summary="«this.description»"
+	        android:title="«this.name»" />
+«ELSE»
+<Preference
+	        android:key="«this.id»"
+	        android:summary="«this.description»"
+	        android:title="«this.name»" />
+«ENDIF»
+«ENDDEFINE»
+
+«DEFINE section FOR Section»
+	<PreferenceCategory android:title="«this.name»">
+		«EXPAND feature FOREACH this.features»
+	</PreferenceCategory>
+«ENDDEFINE»
+
+«DEFINE main FOR SettingsModel»
+«FILE "android-preferences.xml"»
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	«EXPAND section FOREACH this.sections»
+</PreferenceScreen>
+«ENDFILE»
+«ENDDEFINE»
+
